@@ -3,14 +3,13 @@ class OktaAws < Formula
 
   desc "Okta AWS API tool"
   homepage "https://github.com/chef/okta_aws"
-  url "https://github.com/chef/okta_aws/archive/v0.2.0.tar.gz"
-  sha256 "b19c16da655115a71f8378fbd005e675db93f385daf7a6f24260b608c2bc882d"
+  url "https://files.pythonhosted.org/packages/ea/15/b3366ac3f43997eb09f4dc2a2f783d94078acc5b2c81ae2a5c6140c795bb/okta_aws-0.3.0.tar.gz"
+  sha256 "509b769fbea368bf755d52b94bd7f6c6530f942248092d413d1a5db063b15215"
 
   head "https://github.com/chef/okta_aws.git"
 
   depends_on "python3"
 
-  # Generated with poet requests -a toml
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/15/d4/2f888fc463d516ff7bf2379a4e9a552fef7f22a94147655d9b1097108248/certifi-2018.1.18.tar.gz"
     sha256 "edbc3f203427eef571f79a7692bb160a2b0f7ccaa31953e99bd17e307cf63f7d"
