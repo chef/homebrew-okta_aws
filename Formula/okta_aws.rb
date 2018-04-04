@@ -3,8 +3,8 @@ class OktaAws < Formula
 
   desc "Okta AWS API tool"
   homepage "https://github.com/chef/okta_aws"
-  url "https://files.pythonhosted.org/packages/ea/15/b3366ac3f43997eb09f4dc2a2f783d94078acc5b2c81ae2a5c6140c795bb/okta_aws-0.3.0.tar.gz"
-  sha256 "509b769fbea368bf755d52b94bd7f6c6530f942248092d413d1a5db063b15215"
+  url "https://files.pythonhosted.org/packages/41/90/70b35ad8636f8d5098e9682ebd04ac359ba66e07012a5ff14938a36547a3/okta_aws-0.3.1.tar.gz"
+  sha256 "c73d72e801c71bd75170dd4dc75fe0b1313b020731a5a6484f258bb47bd60bea"
 
   head "https://github.com/chef/okta_aws.git"
 
