@@ -9,6 +9,10 @@ class OktaAws < Formula
   head "https://github.com/chef/okta_aws.git"
 
   depends_on "python3"
+  # okta_aws dependes on the aws cli. If you install it using something other
+  # than homebrew, then pass --without-awscli when installing okta_aws
+  option "without-awscli", "Don't install the AWS cli tools with homebrew"
+  depends_on "awscli" => :recommended
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/15/d4/2f888fc463d516ff7bf2379a4e9a552fef7f22a94147655d9b1097108248/certifi-2018.1.18.tar.gz"
