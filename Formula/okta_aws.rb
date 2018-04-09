@@ -3,8 +3,8 @@ class OktaAws < Formula
 
   desc "Okta AWS API tool"
   homepage "https://github.com/chef/okta_aws"
-  url "https://files.pythonhosted.org/packages/7e/ac/7b6157cb97270f81aa5a4d6813cda09b4b1d5c784837e6575342287f92f6/okta_aws-0.3.2.tar.gz"
-  sha256 "5b0fc0c7ab177584ee8c1583f4579a831c92702b8351648755fbd6b4eab7f279"
+  url "https://files.pythonhosted.org/packages/a9/4f/5db74636920a7df80d5e35a3b345a4f1789642c932592fdf5f6a5e46c0bd/okta_aws-0.3.3.tar.gz"
+  sha256 "ff10b762de34d44f9940c64c672221192506b20fbe5003f6bcf29c8dadf6bd2e"
 
   head "https://github.com/chef/okta_aws.git"
 
@@ -45,6 +45,7 @@ class OktaAws < Formula
   end
 
   def install
+    virtualenv_create(libexec, "python3")
     virtualenv_install_with_resources
   end
 
