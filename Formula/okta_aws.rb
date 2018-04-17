@@ -3,8 +3,8 @@ class OktaAws < Formula
 
   desc "Okta AWS API tool"
   homepage "https://github.com/chef/okta_aws"
-  url "https://files.pythonhosted.org/packages/a9/4f/5db74636920a7df80d5e35a3b345a4f1789642c932592fdf5f6a5e46c0bd/okta_aws-0.3.3.tar.gz"
-  sha256 "ff10b762de34d44f9940c64c672221192506b20fbe5003f6bcf29c8dadf6bd2e"
+  url "https://files.pythonhosted.org/packages/00/6b/82d46291da8fbe3a8cb941ac0ffb8ae5fb759672a411a5bca195762cf748/okta_aws-0.4.0.tar.gz"
+  sha256 "66b67bf41658b9531407b360f7b30d81f6f35d5e320946b426f085ff67567059"
 
   head "https://github.com/chef/okta_aws.git"
 
@@ -15,8 +15,8 @@ class OktaAws < Formula
   depends_on "awscli" => :recommended
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/15/d4/2f888fc463d516ff7bf2379a4e9a552fef7f22a94147655d9b1097108248/certifi-2018.1.18.tar.gz"
-    sha256 "edbc3f203427eef571f79a7692bb160a2b0f7ccaa31953e99bd17e307cf63f7d"
+    url "https://files.pythonhosted.org/packages/4d/9c/46e950a6f4d6b4be571ddcae21e7bc846fcbb88f1de3eff0f6dd0a6be55d/certifi-2018.4.16.tar.gz"
+    sha256 "13e698f54293db9f89122b0581843a782ad0934a4fe0172d2a980ba77fc61bb7"
   end
 
   resource "chardet" do
