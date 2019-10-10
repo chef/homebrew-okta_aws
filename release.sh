@@ -25,7 +25,7 @@ rm -rf homebrew
 
 echo "=> Patching generated formula"
 patch --ed Formula/okta_aws.rb <<EOF
-47c
+82c
     system "#{bin}/okta_aws --help"
 .
 9a
