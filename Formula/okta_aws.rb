@@ -50,7 +50,7 @@ class OktaAws < Formula
   end
 
   resource "python-dateutil" do
-    system "#{bin}/okta_aws --help"
+    url "https://files.pythonhosted.org/packages/ad/99/5b2e99737edeb28c71bcbec5b5dda19d0d9ef3ca3e92e3e925e7c0bb364c/python-dateutil-2.8.0.tar.gz"
     sha256 "c89805f6f4d64db21ed966fda138f8a5ed7a4fdbc1a8ee329ce1b74e3c74da9e"
   end
 
@@ -85,6 +85,6 @@ class OktaAws < Formula
   end
 
   test do
-    false
+    system "#{bin}/okta_aws --help"
   end
 end
