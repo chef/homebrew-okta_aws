@@ -2,10 +2,19 @@
 # Grabs the latest release from pypi and creates an updated formula for the
 # new release, before pushing it to git.
 
+if [[ `pip --version | grep "python 3"` ]]; then
+  pip=pip
+elif [[ `pip3 --version | grep "python 3"` ]];then
+  pip=pip3
+else
+  echo "Could not find a Python 3 version of pip available"
+  exit 1
+fi
+
 echo "=> Installing okta_aws to a virtualenv"
 virtualenv homebrew
 source homebrew/bin/activate
-pip install okta_aws homebrew-pypi-poet
+$pip install okta_aws homebrew-pypi-poet
 
 echo "=> Generating formula"
 poet -f okta_aws > Formula/okta_aws.rb
