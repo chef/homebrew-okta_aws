@@ -3,8 +3,8 @@ class OktaAws < Formula
 
   desc "Okta AWS API tool"
   homepage "https://github.com/chef/okta_aws"
-  url "https://files.pythonhosted.org/packages/e2/fb/ebdc18593852a7f5f6733018e5f83fcd99dfa016ed2fc3d124398c3cb18f/okta_aws-0.5.4.tar.gz"
-  sha256 "a6e6793ac617b7ed69df377b2726c137a0a73a6cc53ac8c8dd59130ef2418992"
+  url "https://files.pythonhosted.org/packages/6b/ce/9cf60d8fd0fbf1db12766e98e3427ecc7adbd1e2a9ba4a84d6189e66cc98/okta_aws-0.6.0.tar.gz"
+  sha256 "4946e5f161b05de5c0f8689d31df008f700338b0003eba4a71ee6f66e8e1c746"
 
   head "https://github.com/chef/okta_aws.git"
 
@@ -15,13 +15,13 @@ class OktaAws < Formula
   depends_on "awscli" => :recommended
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/f9/79/499f0e3e23056abae50abd434bf4730749d15e5d4c0a3a9681d5f0936221/boto3-1.9.245.tar.gz"
-    sha256 "a985ed608640f8f7be49f83f298172876b695cc2218e335334a9da3bf6b0a968"
+    url "https://files.pythonhosted.org/packages/91/52/2cf430f93c40c10511d131d7001248bce8c3ba89958333ff1001334095b7/boto3-1.9.246.tar.gz"
+    sha256 "ad269aa51439e0dd5f8245913bd2dd85684e37c237f5635143e96d48ce74f0eb"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/a7/5b/d05c2ec36b6351f7c759b5ba932de031b0623cf8620cb4f5944a309a2a95/botocore-1.12.245.tar.gz"
-    sha256 "16a09307cef306312d4c3ea18ed3902ae1e084c905bda091db2689e9852753ef"
+    url "https://files.pythonhosted.org/packages/33/99/e663c1c0fab7fd9570d0095d4300cd734c8504ce4d336f34edef40fd4982/botocore-1.12.246.tar.gz"
+    sha256 "210d9de193e1a1f8ad22ce57b6c18d48c79ff0c093680ec1a07e83a635fce4c7"
   end
 
   resource "certifi" do
