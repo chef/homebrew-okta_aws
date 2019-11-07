@@ -3,8 +3,8 @@ class OktaAws < Formula
 
   desc "Okta AWS API tool"
   homepage "https://github.com/chef/okta_aws"
-  url "https://files.pythonhosted.org/packages/6b/ce/9cf60d8fd0fbf1db12766e98e3427ecc7adbd1e2a9ba4a84d6189e66cc98/okta_aws-0.6.0.tar.gz"
-  sha256 "4946e5f161b05de5c0f8689d31df008f700338b0003eba4a71ee6f66e8e1c746"
+  url "https://files.pythonhosted.org/packages/4d/6b/1ccb49fa8c6e8a53d6be4745b2dd4fe3fa99d0c219e7aa7aeba72a4d9d36/okta_aws-0.7.0.tar.gz"
+  sha256 "2aa0c2e62b6c078311c164ea9068a49bd3aa8172c5a8cb4b1733375b1fa65065"
 
   head "https://github.com/chef/okta_aws.git"
 
@@ -15,13 +15,13 @@ class OktaAws < Formula
   depends_on "awscli" => :recommended
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/91/52/2cf430f93c40c10511d131d7001248bce8c3ba89958333ff1001334095b7/boto3-1.9.246.tar.gz"
-    sha256 "ad269aa51439e0dd5f8245913bd2dd85684e37c237f5635143e96d48ce74f0eb"
+    url "https://files.pythonhosted.org/packages/b2/96/d7cf8f2666a365735254f72de4920b3c7df2028f43cb823d43a986d79172/boto3-1.10.13.tar.gz"
+    sha256 "ad6d50dd5726a12c6442c23aabec0c7e09ef610834d9fbda010bade6888d7677"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/33/99/e663c1c0fab7fd9570d0095d4300cd734c8504ce4d336f34edef40fd4982/botocore-1.12.246.tar.gz"
-    sha256 "210d9de193e1a1f8ad22ce57b6c18d48c79ff0c093680ec1a07e83a635fce4c7"
+    url "https://files.pythonhosted.org/packages/cd/77/669a37677e2a7a25b2ae02843bc12efe41997d766a4e7ecd9719b8049172/botocore-1.13.13.tar.gz"
+    sha256 "d1c6f01486566521b59fd5d4f6ba0adf526ed0d1807a0c0ba6604e982d014f3d"
   end
 
   resource "certifi" do
@@ -65,8 +65,8 @@ class OktaAws < Formula
   end
 
   resource "six" do
-    url "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz"
-    sha256 "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+    url "https://files.pythonhosted.org/packages/94/3e/edcf6fef41d89187df7e38e868b2dd2182677922b600e880baad7749c865/six-1.13.0.tar.gz"
+    sha256 "30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66"
   end
 
   resource "toml" do
